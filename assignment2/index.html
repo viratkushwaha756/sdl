@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body onload="document.registration.userid.focus();">
+    <div class="form-container">
+        <h1 class="form-title">Student Course Registration</h1>
+        <p class="form-description">Please fill out the form below to register.</p>
+        <form name="registration" id="registrationForm" class="registration-form">
+            <ul class="form-list">
+                <li class="form-item">
+                    <label for="userid" class="form-label">User ID:</label>
+                    <input type="text" name="userid" id="userid" class="form-input" required>
+                </li>
+                <li class="form-item">
+                    <label for="passid" class="form-label">Password:</label>
+                    <input type="password" name="passid" id="passid" class="form-input" required>
+                </li>
+                <li class="form-item">
+                    <label for="username" class="form-label">Full Name:</label>
+                    <input type="text" name="username" id="username" class="form-input" required>
+                </li>
+                <li class="form-item">
+                    <label for="email" class="form-label">Email Address:</label>
+                    <input type="email" name="email" id="email" class="form-input" required>
+                </li>
+                <li class="form-item">
+                    <label for="course" class="form-label">Select Course:</label>
+                    <select name="course" id="course" class="form-select" required>
+                        <option value="">-- Select --</option>
+                        <option value="math">Mathematics</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="eng">English Literature</option>
+                    </select>
+                </li>
+                <li class="form-item">
+                    <label class="form-label">Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" name="gender" value="Male" class="form-radio" required><span>Male</span>
+                        <input type="radio" name="gender" value="Female" class="form-radio"><span>Female</span>
+                    </div>
+                </li>
+                <li class="form-item">
+                    <label class="form-label">Languages Known:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="lang" value="English" class="form-checkbox" checked><span>English</span>
+                        <input type="checkbox" name="lang" value="Other" class="form-checkbox"><span>Other</span>
+                    </div>
+                </li>
+                <li class="form-item">
+                    <label for="desc" class="form-label">Why do you want to join?</label>
+                    <textarea name="desc" id="desc" class="form-textarea"></textarea>
+                </li>
+                <li class="form-item">
+                    <input type="submit" value="Submit" class="form-submit">
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
